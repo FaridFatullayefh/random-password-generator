@@ -1,4 +1,3 @@
-/* Genel sayfa stil ayarları */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -12,7 +11,6 @@ body {
     overflow: hidden;
 }
 
-/* Konteyner tasarımı */
 .container {
     background-color: #fff;
     width: 90%;
@@ -24,13 +22,11 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Konteynerin hover efekti */
 .container:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
-/* Başlık stil ayarları */
 h1 {
     font-size: 2.5em;
     color: #4CAF50;
@@ -40,7 +36,6 @@ h1 {
     font-weight: 700;
 }
 
-/* Formun genel düzeni */
 form {
     display: flex;
     flex-direction: column;
@@ -48,7 +43,6 @@ form {
     margin-top: 30px;
 }
 
-/* Input ve buton stil ayarları */
 input[type="number"], button, input[type="checkbox"], input[type="radio"] {
     padding: 12px;
     font-size: 1.2em;
@@ -58,14 +52,12 @@ input[type="number"], button, input[type="checkbox"], input[type="radio"] {
     transition: all 0.3s ease;
 }
 
-/* Input alanı hover ve focus efekti */
 input[type="number"]:focus {
     border-color: #4CAF50;
     box-shadow: 0 0 8px rgba(0, 172, 68, 0.2);
     transform: scale(1.05);
 }
 
-/* Buton stil ayarları */
 button {
     background-color: #4CAF50;
     color: white;
@@ -74,13 +66,11 @@ button {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Buton hover efekti */
 button:hover {
     background-color: #45a049;
     transform: translateY(-2px);
 }
 
-/* Checkbox ve Radio Button stil ayarları */
 input[type="checkbox"], input[type="radio"] {
     width: 20px;
     height: 20px;
@@ -88,19 +78,16 @@ input[type="checkbox"], input[type="radio"] {
     transition: transform 0.3s ease;
 }
 
-/* Checkbox ve radio butonları aktifken stil */
 input[type="checkbox"]:checked, input[type="radio"]:checked {
     background-color: #4CAF50;
     border-color: #4CAF50;
     box-shadow: 0 0 5px rgba(0, 172, 68, 0.4);
 }
 
-/* Checkbox ve radio butonları hover efekti */
 input[type="checkbox"]:hover, input[type="radio"]:hover {
     transform: scale(1.2);
 }
 
-/* Label stil ayarları */
 label {
     font-size: 1.2em;
     color: #333;
@@ -110,12 +97,10 @@ label {
     transition: color 0.3s ease;
 }
 
-/* Label hover efekti */
 label:hover {
     color: #4CAF50;
 }
 
-/* Şifreyi gösteren bölüm */
 .password {
     font-size: 1.4em;
     font-weight: bold;
@@ -128,7 +113,6 @@ label:hover {
     letter-spacing: 1px;
 }
 
-/* Kopyalama butonu */
 .copy-btn {
     background-color: #ff9800;
     color: white;
@@ -140,13 +124,11 @@ label:hover {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Kopyalama butonu hover efekti */
 .copy-btn:hover {
     background-color: #e68900;
     transform: translateY(-2px);
 }
 
-/* Animasyonlar */
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -169,17 +151,14 @@ label:hover {
     }
 }
 
-/* Başlık animasyonu */
 h1 {
     animation: fadeIn 1s ease-out;
 }
 
-/* Form input ve butonları animasyon */
 input[type="number"], button, .password, .copy-btn {
     animation: fadeUp 1.2s ease-out;
 }
 
-/* Sayfa arka planı için gradient */
 body::before {
     content: '';
     position: absolute;
@@ -193,7 +172,6 @@ body::before {
     filter: blur(30px);
 }
 
-/* Responsif tasarım */
 @media (max-width: 768px) {
     .container {
         width: 90%;
@@ -225,27 +203,22 @@ body::before {
     }
 }
 
-/* Input ve buton animasyonları */
 input[type="number"], button, .password, .copy-btn {
     animation: fadeUp 1.2s ease-out;
 }
 
-/* Form ve içerik arasındaki boşluklar */
 .container > form {
     margin-bottom: 40px;
 }
 
-/* İçeriklerin üstündeki gölge efektleri */
 .container, .password {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Hover durumunda biraz büyüyen ve pencereden dışarı kaymayan şifreyi gösterme alanı */
 .password:hover {
     transform: scale(1.03);
 }
 
-/* Buton animasyonları */
 button {
     transition: all 0.3s ease;
 }
